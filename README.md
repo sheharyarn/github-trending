@@ -8,16 +8,21 @@ github-trending
 
 Add this line to your application's Gemfile:
 
-    gem 'github-trending', github: 'sheharyarn/github-trending'
+```ruby
+gem 'github-trending', github: 'sheharyarn/github-trending'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install github-trending
-
+```bash
+$ gem install github-trending
+```
 
 ## Usage
 
