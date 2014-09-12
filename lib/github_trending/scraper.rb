@@ -56,6 +56,18 @@ module Github
       private
 
       def generate_url_for_get(language, since)
+        language = language.to_s if language
+
+        if since
+          since = 
+            case since.to_sym
+              when :d, :day,   :daily   then 'daily'
+              when :w, :week,  :weekly  then 'weekly'
+              when :m, :month, :monthly then 'monthly'
+              else nil
+            end
+        end
+
         uri = Addressable::URI.parse(BASE_URL)
         if language || since
           uri.query_values = { l: language, since: since }.delete_if { |_k, v| v.nil? }

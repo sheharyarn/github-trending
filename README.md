@@ -57,13 +57,26 @@ end
 You can also fetch by a specific language:
 
 ```ruby
-ruby_repos = Github::Trending.get 'ruby'
+ruby_repos = Github::Trending.get :ruby
 ```
 
 To get a list of all languages:
 
 ```ruby
 languages = Github::Trending.all_languages
+```
+
+You can also get top github repos of the `:week` and `:month` as well (default is `:day`):
+
+```ruby
+Github::Trending.get(:scala, :week)
+# Top scala repos in the week
+
+Github::Trending.get(nil, :month)
+# Top repos (all languages) in this month
+
+Github::Trending.get('visual-basic', 'day')
+# Can pass strings as well
 ```
 
 
