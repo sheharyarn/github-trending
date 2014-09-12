@@ -20,11 +20,11 @@ end
 Gem::Specification.new do |spec|
   spec.name          = 'git-trend'
   spec.version       = GitTrend::VERSION
-  spec.authors       = ['rochefort']
-  spec.email         = ['terasawan@gmail.com']
+  spec.authors       = ['rochefort', 'sheharyarn']
+  spec.email         = ['hello@sheharyar.me']
   spec.summary       = 'cli based; show Trending repository on github'
   spec.description   = spec.summary
-  spec.homepage      = 'https://github.com/rochefort/git-trend'
+  spec.homepage      = 'https://github.com/sheharyarn/git-trend'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
