@@ -3,20 +3,6 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'github_trending/version'
 
-def install_message
-  s = ''
-  s << "\xf0\x9f\x8d\xba  " if or_over_mac_os_lion?
-  s << "Thanks for installing!"
-end
-
-def or_over_mac_os_lion?
-  return false unless RUBY_PLATFORM =~ /darwin/
-
-  macos_full_version = `/usr/bin/sw_vers -productVersion`.chomp
-  macos_version = macos_full_version[/10\.\d+/]
-  return macos_version >= '10.7'  # 10.7 is lion
-end
-
 Gem::Specification.new do |spec|
   spec.name          = 'github-trending'
   spec.version       = Github::Trending::VERSION
@@ -32,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.post_install_message = install_message
+  spec.post_install_message = "\n\n Thanks for Installing!\n\n\n"
 
   spec.add_dependency 'thor',        '~> 0.19.1'
   spec.add_dependency 'mechanize',   '~> 2.7.2'

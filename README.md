@@ -1,5 +1,5 @@
 github-trending
-=========
+===============
 
 github-trending is a command line utitlity to show [Trending repositories on GitHub](https://github.com/trending).  
 

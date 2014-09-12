@@ -1,3 +1,7 @@
+## v0.2.0
+
+* Extracted functionality from the `git-trend` gem for application use
+
 ## v0.1.1
 
 * Upgrade new github trending layout #1 [9a72e2b]

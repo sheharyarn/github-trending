@@ -1,5 +1,3 @@
-require 'github_trending/ext'
-
 module Github
   module Trending
     class ScrapeException < StandardError; end
