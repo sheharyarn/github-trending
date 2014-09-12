@@ -5,8 +5,13 @@ require 'addressable/uri'
 module Github
   module Trending
     def self.get(language = nil, since = nil)
-      list = Github::Trending::Scraper.new
-      list.get(language, since)
+      scraper = Github::Trending::Scraper.new
+      scraper.get(language, since)
+    end
+
+    def self.all_languages
+      scraper = Github::Trending::Scraper.new
+      scraper.list_languages
     end
 
     class Scraper
