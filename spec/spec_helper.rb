@@ -21,7 +21,7 @@ require 'rspec/its'
 require 'webmock/rspec'
 
 require 'simplecov'
-require 'git_trend'
+require 'github_trending'
 SimpleCov.start
 
 RSpec.configure do |config|

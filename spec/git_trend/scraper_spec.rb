@@ -9,7 +9,7 @@ RSpec.describe GitTrend::Scraper do
       @scraper = Scraper.new
     end
     subject { @scraper.instance_variable_get(:@agent) }
-    its(:user_agent) { should eq "git-trend #{VERSION}" }
+    its(:user_agent) { should eq "github-trending #{VERSION}" }
     its(:proxy_addr) { should eq '192.168.1.99' }
     its(:proxy_user) { should eq 'proxy_user' }
     its(:proxy_pass) { should eq 'proxy_pass' }

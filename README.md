@@ -1,14 +1,14 @@
-git-trend
+github-trending
 =========
 
-git-trend is a command line utitlity to show [Trending repositories on GitHub](https://github.com/trending).  
+github-trending is a command line utitlity to show [Trending repositories on GitHub](https://github.com/trending).  
 
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'git-trend', github: 'sheharyarn/git-trend'
+    gem 'github-trending', github: 'sheharyarn/github-trending'
 
 And then execute:
 
@@ -17,11 +17,11 @@ And then execute:
 Or install it yourself as:
 
     $ gem install specific_install
-    $ gem specific_install -l https://github.com/sheharyarn/git-trend
+    $ gem specific_install -l https://github.com/sheharyarn/github-trending
 
 ## Usage
 
-Use the git-trend as follows:
+Use the github-trending as follows:
 
 ### daily trending
 
@@ -200,7 +200,7 @@ applescript
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/git-trend/fork )
+1. Fork it ( https://github.com/[my-github-username]/github-trending/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

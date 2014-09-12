@@ -11,7 +11,7 @@ module GitTrend
 
     desc :version, 'show version'
     def version
-      say "git-trend version: #{VERSION}", :green
+      say "github-trending version: #{VERSION}", :green
     end
 
     desc :list, "\033[32m(DEFAULT COMMAND)\e[0m List Trending repository on github [-l, -s, -d]"

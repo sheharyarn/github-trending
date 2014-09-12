@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'git_trend/version'
+require 'github_trending/version'
 
 def install_message
   s = ''
@@ -18,13 +18,13 @@ def or_over_mac_os_lion?
 end
 
 Gem::Specification.new do |spec|
-  spec.name          = 'git-trend'
-  spec.version       = GitTrend::VERSION
+  spec.name          = 'github-trending'
+  spec.version       = Github::Trending::VERSION
   spec.authors       = ['rochefort', 'sheharyarn']
   spec.email         = ['hello@sheharyar.me']
-  spec.summary       = 'cli based; show Trending repository on github'
+  spec.summary       = 'Fetches Trending Github Repos'
   spec.description   = spec.summary
-  spec.homepage      = 'https://github.com/sheharyarn/git-trend'
+  spec.homepage      = 'https://github.com/sheharyarn/github-trending'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

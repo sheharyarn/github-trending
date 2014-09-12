@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in git-trend.gemspec
+# Specify your gem's dependencies in github-trending.gemspec
 gemspec
