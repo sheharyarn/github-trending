@@ -23,13 +23,13 @@ Or install it yourself as:
 
 Require it if you haven't:
 
-```
+```ruby
 require 'github-trending'
 ```
 
 Get the day's trending repos:
 
-```
+```ruby
 repos = Github::Trending.get
 repos.each do |r|
   puts "#{r.name} (#{r.star_count} stargazers)"
@@ -51,13 +51,13 @@ end
 
 You can also fetch by a specific language:
 
-```
-repos = Github::Trending.get 'ruby'
+```ruby
+ruby_repos = Github::Trending.get 'ruby'
 ```
 
 To get a list of all languages:
 
-```
+```ruby
 languages = Github::Trending.all_languages
 ```
 
