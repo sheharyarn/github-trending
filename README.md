@@ -63,10 +63,10 @@ ruby_repos = Github::Trending.get :ruby
 To get a list of all languages:
 
 ```ruby
-languages = Github::Trending.all_languages
+languages = Github::Trending.languages
 ```
 
-You can also get top github repos of the `:week` and `:month` as well (default is `:day`):
+You can get top github repos of the `:week` and `:month` as well (default is `:day`):
 
 ```ruby
 Github::Trending.get(:scala, :week)

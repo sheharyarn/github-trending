@@ -9,9 +9,15 @@ module Github
       scraper.get(language, since)
     end
 
-    def self.all_languages
+    def self.languages
       scraper = Github::Trending::Scraper.new
       scraper.list_languages
+    end
+
+    class << self
+      alias_method :all_languages,  :languages
+      alias_method :get_languages,  :languages
+      alias_method :list_languages, :languages
     end
 
     class Scraper
