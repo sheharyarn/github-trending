@@ -58,6 +58,7 @@ You can also fetch by a specific language:
 
 ```ruby
 ruby_repos = Github::Trending.get :ruby
+objc_repos = Github::Trending.get :objective_c
 ```
 
 To get a list of all languages:
@@ -75,7 +76,7 @@ Github::Trending.get(:scala, :week)
 Github::Trending.get(nil, :month)
 # Top repos (all languages) in this month
 
-Github::Trending.get('visual-basic', 'day')
+Github::Trending.get('objective-c++', 'day')
 # Can pass strings as well
 ```
 

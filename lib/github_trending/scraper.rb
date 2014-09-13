@@ -62,7 +62,7 @@ module Github
       private
 
       def generate_url_for_get(language, since)
-        language = language.to_s if language
+        language = language.to_s.gsub('_', '-') if language
 
         if since
           since = 
