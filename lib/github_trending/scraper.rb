@@ -40,6 +40,7 @@ module Github
           meta_data = content.search('.repo-list-meta').text
           project.lang, project.star_count = extract_lang_and_star_from_meta(meta_data)
           project.name        = content.search('.repo-list-name a').text.split.join
+          project.url         = BASE_HOST + content.search('.repo-list-name a').first.attributes["href"].value
           project.description = content.search('.repo-list-description').text.gsub("\n", '').strip
           projects << project
         end
@@ -65,7 +66,7 @@ module Github
         language = language.to_s.gsub('_', '-') if language
 
         if since
-          since = 
+          since =
             case since.to_sym
               when :d, :day,   :daily   then 'daily'
               when :w, :week,  :weekly  then 'weekly'

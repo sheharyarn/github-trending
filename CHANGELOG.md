@@ -1,3 +1,7 @@
+## v0.2.3
+
+* Added repository url(s) to the fetched list
+
 ## v0.2.2
 
 * Language method aliases, and proper symbol to string conversion for languages.
